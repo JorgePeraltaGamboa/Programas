@@ -10,15 +10,15 @@ def recorre(data):
         ldob.append(str(data[key]["dob"]))
         if("children" in data[key]):
             recorre(data[key]["children"])
-"""def result():
+def result():
     recorre(data)
     print min(ldob)
     print max(ldob)
     print lnames
-"""
 
-if __name__ == '__main__':
+"""if __name__ == '__main__':
     recorre(data)
     print min(ldob)
     print max(ldob)
-    print lnames
+    print lnames"""
+result()
