@@ -1,8 +1,15 @@
 import time
 global lifespan
 lifespan=75
-import lifespanError
-import negativeError
+#Class expception lifespan
+class lifespanError(Exception):
+    def __str__(self):
+        print "Age value exceeds normal lifespan"
+#Class expception negatives
+class negativeError(Exception):
+    def __str__(self):
+        print "Invalid value, only positive numbers"
+
 def age_diference(birth_year):
     try:
         if(birth_year<0):
